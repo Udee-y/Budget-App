@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="top">
+        <div class="header-text">Available Budget in <span class ="header-month">%month%</span>:</div>
+        <h1 class="header-value">+ 0.00</h1>
+
+        <div class="income">
+          <div class="income-text text">Income</div>
+          <div class="flex">
+            <div class="income-value value">+ 0.00</div>
+            <div class="percentage-valu"> &nbsp; </div>
+          </div>
+        </div>
+
+        <div class="expense">
+          <div class="expense-text text">Expenses</div>
+          <div class="flex">
+            <div class="expense-value value">- 0.00</div>
+            <div class="percentage-value">45%</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="add-container">
+        <select class="select-type">
+          <option value="inc" selected>+</option>
+          <option value="exp">-</option>
+        </select>
+
+        <input
+          type="text"
+          class="add-description"
+          placeholder="Add Description"
+        />
+        <input type="number" class="add-value" placeholder="Value" />
+        <div>
+          <button class="add-button color2">
+            <img src="./tick.png" class="tick" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container clearfix">
+      
+      <div class="income-end">
+        <h2 class="income-end-title">INCOME</h2>
+
+        <div class="income-end-list">
+
+           <!-- <div class="items" id="income-0">
+            <p class="item-description">Website Project</p>
+            <div class="right">
+              <div class="item-value">
+                + 2,500.00</div>
+                <div class="btn-delete color2">
+                  <button class="item-delete">x</button>
+                </div>
+            </div>
+          </div>   -->
+
+          <!-- <div class="items" id="income-0">
+            <p class="item-description">Website Project</p>
+            <div class="right">
+              <div class="item-value">
+                + 2,500.00</div>
+                <div class="btn-delete color2">
+                  <button class="item-delete">x</button>
+                </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+
+      <div class="expenses-end">
+        <h2 class="expenses-end-title">EXPENSES</h2>
+
+        <div class="expenses-end-list">
+
+          <!-- <div class="items" id="expense-0">
+            <p class="item-description">Website Project</p>
+            <div class="right">
+              <div class="item-value">+ 2,500.00</div>
+              <div class="item-percentage">10%</div>
+              <div class="btn-delete color1">
+                <button class="item-delete col">x</button>
+              </div>
+            </div>
+          </div>  -->
+
+          <!-- <div class="items" id="expense-1">
+            <p class="item-description">Website Project</p>
+            <div class="right">
+              <div class="item-value">+ 2,500.00</div>
+              <div class="item-percentage">10%</div>
+              <div class="btn">
+                <button class="item-delete color1">x</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
